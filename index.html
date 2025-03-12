@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpVCn0y5D1jv4tQlIAJlN5q3Yd0n3plNtLuUvW8ynt0cbAYdj1yQvSiVQZA" crossorigin="anonymous">
+        
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img src="batmann.png" alt="Your Logo" height="100">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Krish Bogati</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="img">
+                        <img src="krish.png" alt="profile">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm Krish Bogati, and I love building cool stuff for the web. I'm into making things look great
+                        and work smoothly – that's the UI/UX part. But I also build the behind-the-scenes stuff, making
+                        sure everything runs like a charm. My passion is creating web apps that people enjoy using.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section py-5 bg-light">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="service-item card h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-globe fa-3x mb-3"></i>
+                            <h3 class="card-title">Web Development</h3>
+                            <p class="card-text">Building responsive and user-friendly websites.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="service-item card h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-gears fa-3x mb-3"></i>
+                            <h3 class="card-title">UI/UX Design</h3>
+                            <p class="card-text">Creating intuitive and visually appealing interfaces.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="service-item card h-100">
+                        <div class="card-body text-center">
+                            <i class="fa-brands fa-android fa-3x mb-3"></i>
+                            <h3 class="card-title">Web Application Development</h3>
+                            <p class="card-text">Developing robust and scalable web applications.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section py-5">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" name="message" placeholder="Your Message"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="contact-icons">
+                <a href="https://www.facebook.com/krish.bogati.94/" class="contact-icon" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/tagzxh0_/" class="contact-icon" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://www.youtube.com/@krishbogati7506" class="contact-icon" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+<a href="mailto:krishbogati39@gmail.com" class="contact-icon" title="Gmail"><i class="fas fa-envelope"></i></a>
+    </section>
+    
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Yt+vApCfZx16v1jXygcjKOCkqJUmka5zY4nKavK6toGT1OyrFQnvb6zvJ5KtX1ogL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

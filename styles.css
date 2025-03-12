@@ -1,0 +1,220 @@
+/* batman-theme.css */
+
+/* --- Base Styles --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Dark background */
+    color: #ddd; /* Light text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: #222; /* Darker header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Batman-Themed Navigation - Horizontal */
+.navbar {
+    background-color: #0b0b0d;
+    border-bottom: 3px solid #ffcc00;
+    padding: 10px 20px;
+    display: flex; /* Make navbar a flex container */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styles for the logo */
+.navbar img {
+    height: 80px;
+    display: block;
+}
+
+.navbar-brand {
+
+    font-size: 1.8rem;
+    
+   font-weight: bold;
+    
+ color: #ffcc00 !important;
+    
+ text-transform: uppercase;
+    
+ letter-spacing: 2px;
+    
+display: flex; /* Ensure navbar-brand is a flex container */
+    
+     align-items: center; /* Vertically align items */
+    
+    } 
+
+.navbar-nav {
+    display: flex;
+    gap: 20px; /* Space between nav items */
+}
+
+.navbar-nav .nav-item {
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    color: #d9d9d9 !important;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+    text-shadow: 0 0 10px #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Remove navbar toggler on small screens to keep it always horizontal */
+.navbar-toggler {
+    display: none;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-image: url('bat-signal.png'); /* Replace with your bat signal image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+/* --- Sections --- */
+.section {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    color: #ffc107;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.bg-light {
+    background-color: #1a1a1a !important; /* Darker background for services */
+}
+
+/* --- Images --- */
+.img {
+    width: 200px;
+    height: 200px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* --- Services --- */
+.service-item {
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2rem;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.service-item h3 {
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #111;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+/* --- Forms --- */
+.form-control {
+    background-color: #333;
+    color: #ddd;
+    border: 1px solid #555;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+form button {
+    background-color: #ffc107;
+    color: #111;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e0a800;
+}
+
+/* --- Contact Icons --- */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #cfc6c6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+    color: #007bff;
+}
